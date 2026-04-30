@@ -12,9 +12,9 @@ fortune | cowsay | lolcat
 docker ps -a
 docker commit ef048ccf6bd0  ubuntu_with_fortune
 docker tag ubuntu_with_fortune dcesini/bdp1_2026:ubuntu_with_fortune_1.0
-docker push dcesini/BDP1_2026:ubuntu_with_fortune_1.0
+docker push dcesini/bdp1_2026:ubuntu_with_fortune_1.0
 
-docker run  -e PATH=/usr/games/:${PATH} -e LC_ALL=C  dcesini/BDP1_2026:ubuntu_with_fortune_1.0 /bin/bash -c 'fortune | cowsay | lolcat'
+docker run  -e PATH=/usr/games/:${PATH} -e LC_ALL=C  dcesini/bdp1_2026:ubuntu_with_fortune_1.0 /bin/bash -c 'fortune | cowsay | lolcat'
 
 #### Alternatively you can use a Dockerfile
 
@@ -48,7 +48,7 @@ udocker install
 #############################
 
 ######### PULL A DOCKERHUB IMAGE ##########
-udocker pull dcesini/BDP1_2026:ubuntu_with_fortune_5.0
+udocker pull dcesini/bdp1_2026:ubuntu_with_fortune_5.0
 udocker images
 #######################
 
