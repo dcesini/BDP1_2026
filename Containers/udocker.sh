@@ -54,5 +54,5 @@ udocker images
 
 ######## RUN THE CONTAINER from that image ###############
 
-udocker run dcesini/BDP1_2026:ubuntu_with_fortune_5.0
+udocker run dcesini/bdp1_2026:ubuntu_with_fortune_5.0
 
